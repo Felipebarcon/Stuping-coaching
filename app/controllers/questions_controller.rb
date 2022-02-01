@@ -6,10 +6,10 @@ class QuestionsController < ApplicationController
   def answer
     # TODO
     @question = params[:question]
-    if params[:question] == "I am going to work"
-      @answers = "Great !"
-    elsif params[:question].include?("?")
-      @answers = "Silly question, get dressed and go to work!"
+    if params[:question] == 'I am going to work'
+      @answers = 'Great !'
+    elsif params[:question].include?('?')
+      @answers = 'Silly question, get dressed and go to work!'
     else
       @answers = "I don't care, get dressed and go to work!"
     end
